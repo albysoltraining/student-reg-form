@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'html')));
 app.use(session({
-    secret: 'my-secret-key-2',
+    secret: 'my-secret-key',
     resave: true,
     saveUninitialized: true
 }));
